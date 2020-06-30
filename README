@@ -1,0 +1,22 @@
+
+	This is a simulation of an ATM with a few functionalities which I will descibe. As a specification, it was made using simple linked lists and it has as purpose to retention in a database the attributes of a card(such as: card number, pin, CVV, expiry date, balance, history of operations...) grouped in a subset using a specified formula(position in subset list = sum of a card digits % max number in database) using linked lists and data structures. Further, I will introduce you in the functionalities:
+
+		- all_substes is a linked list where, in every cell, is stored a simple list with cards on a specified position
+		- the list with the cards stores also a linked list being the card's history
+
+		Summarily, the operations that can be performed on a card are divided into two categories:
+			- the operations of an administrator:
+				- resize the database if it is out of memory
+				- add a card in a database
+				- delete a card from database
+				- unblock a card
+				- reverse a transaction
+
+
+			- the operations of a client:
+				- insert the card in the ATM
+				- recharge the card
+				- withdrawl a specified sum
+				- change the pin
+				- can see the balance
+				- transfer funds
